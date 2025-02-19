@@ -37,11 +37,14 @@ def extract_data(url,headers):
         tesla_revenue = pd.concat([tesla_revenue,df1],ignore_index=True)
     return tesla_revenue
 
+@st.cache_data
 def transform_data(df):
-    pass
+    df["Revenue"] = df['Revenue'].str.replace('$',"")
+    df["Revenue"] = df['Revenue'].str.replace(',',"")
+    return df
 
 url_link = "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0220EN-SkillsNetwork/labs/project/revenue.htm"
-tesla_revenue = extract_data(url_link,["Date","Revenue"])
+tesla_revenue = transform_data(extract_data(url_link,["Date","Revenue"]))
 
 # log_file("Web data extracted. Processing has begun.")
 st.header('Displaying date and revenues of Tesla stock.')
