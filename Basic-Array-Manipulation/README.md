@@ -1,0 +1,1 @@
+- The script is taking in a comma separated file and creating a new column which is the difference of the second and first column. Writing the output to a new file and then appending all the contents to a new csv file.
