@@ -39,13 +39,13 @@ By working through these projects, you'll develop skills in:
    ```bash
    git clone https://github.com/VarishtRaheja/'{your-repository.git}'
    cd your-repository
-```
+
 ---
 
 ## Contact
 For any queries or collaboration opportunities, feel free to reach out to me:
 - **Email:** [EMAIL](varishtraheja@gmail.com)
-- **LinkedIn:** [LinkedIn Profile](www.linkedin.com/in/varisht-raheja)
+- **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/varisht-raheja)
 - **Portfolio:** [Portfolio Website](http://varishtraheja.wixsite.com/varishtraheja)
 
 ---
